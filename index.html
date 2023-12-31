@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nickconsone.com/">
+    <meta property="og:title" content="Nick Consone - Official Website">
+    <meta property="og:description" content="Discover the music of Nick Consone, an artist blending unique sounds and captivating lyrics.">
+    <meta property="og:image" content="https://www.nickconsone.com/image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.nickconsone.com/">
+    <meta property="twitter:title" content="Nick Consone - Official Website">
+    <meta property="twitter:description" content="Discover the music of Nick Consone, an artist blending unique sounds and captivating lyrics.">
+    <meta property="twitter:image" content="https://www.nickconsone.com/image.jpg">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Nick Consone - Official Website">
+    <meta name="description" content="Discover the music of Nick Consone, an artist blending unique sounds and captivating lyrics.">
+    <!-- Keywords (not as influential as they once were, but can be included) -->
+    <meta name="keywords" content="Nick Consone, music, artist, songs, albums">
+    <meta name="author" content="Nick Consone">
+    <link rel="canonical" href="https://www.nickconsone.com/">
+
+
+
+    <title>Nick Consone</title>
+    <style>
+        /* CSS styles */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        body {
+        font-family: 'Open Sans', sans-serif;
+        }
+
+
+        .section {
+            padding: 20px;
+            text-align: center;
+
+        }
+        
+        #upcoming-shows {
+            background-color: #FFC8DD;
+            /* Removed max-width and margin from here */
+        }
+
+        #upcoming-shows li {
+            margin-bottom: 20px; /* Space between list items */
+        }
+
+        #upcoming-shows ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto; /* Center the list in the section */
+            max-width: 800px; /* Set a max width for the entire list */
+        }
+
+        #welcome { background-color: #FFCC99; }
+        #latest-news { background-color: #BDE0FE; }
+        #upcoming-shows { background-color: #FFC8DD; }
+        #music { background-color: #CDB4DB; }
+        #newsletter { background-color: #CBF3F0; }
+        #social-media { background-color: #FFEFD5; }
+
+	    #album-description {
+    	  margin: 20px auto; /* Adds margin to the top, bottom, and auto margins on the sides */
+    	  padding: 15px; /* Adds padding inside the section */
+    	  max-width: 800px; /* Restricts the maximum width of the section */
+    	  text-align: justify; /* Justifies the text for a clean look */
+    	  line-height: 1.6; /* Adjusts the space between lines */
+    	  font-size: 1em; /* Sets the font size; adjust as needed */
+	    }
+
+	    #news-article {
+        padding: 15px;
+        margin: 15px auto;
+        max-width: 800px;
+        /* Additional specific styles for the news article */
+        }
+
+        #sticky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* Or any other color */
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional for a slight shadow effect */
+        z-index: 1000;
+	    }
+
+	  /* Add padding to the next section to prevent overlap */
+	    #welcome {
+        padding-top: 170px; /* Adjust based on the actual height of the sticky header */
+	    }
+
+
+        .ticket-button {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 10px;
+        background-color: #A7C7E7; /* Pastel Blue */
+        color: white; /* Adjust text color as needed */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+        border: none; /* Optional: Remove border if it exists */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .show-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto; /* Center the show item */
+        }
+
+        .show-info {
+        flex-grow: 1;
+        text-align: left; /* Align text to the left */
+        margin-right: 20px; /* Adjust space between show info and button */
+        }
+
+
+        .ticket-button:hover {
+        background-color: #95b3d7; /* Slightly darker shade for hover effect */
+        }
+
+        #social-media a i, #social-media a img {
+        height: 20px; /* Adjust the size */
+        width: 20px; /* Adjust the width */
+        margin-right: 5px; /* Space between icon and text */
+        }
+
+        #social-media a {
+        color: #000; /* Icon color */
+        text-decoration: none; /* Removes underline */
+        }
+
+        #social-media a:hover {
+        color: #555; /* Color on hover */
+        }
+
+
+	    .artist-photo {
+        max-width: 40%; /* Adjust this value as needed */
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+        .artist-photo {
+        max-width: 100%; /* Larger percentage for smaller screens */
+        }
+        .artist-text {
+        max-width: 60%; /* Larger percentage for smaller screens */
+        }
+	    #album-description {
+        padding: 10px;
+        max-width: 100%;
+        font-size: 0.9em; /* Slightly smaller font on mobile devices */
+        }
+        #news-article {
+        padding: 10px;
+        max-width: 100%;
+        font-size: 0.9em; /* Slightly smaller font on mobile devices */
+        }
+        }
+
+    </style>
+</head>
+<head>
+    <!-- Other head elements -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="sticky-header" class="section">
+    <img src="nicktext.jpg" alt="Nick Consone" class="artist-text">
+    </div>
+    
+    <header id="welcome" class="section">
+    <img src="nick.jpg" alt="Nick Consone" class="artist-photo">
+<!-- 
+    <h1>Nick Consone</h1>
+    <p>Explore the musical world of Nick Consone, an artist blending unique sounds and captivating lyrics.</p>
+ -->
+    </header>
+
+    <section id="latest-news" class="section">
+        <h2>Latest News</h2>
+    
+    <article id="news-article">
+        <h3>Nick's Triumphant Return from Japan Tour</h3>
+        <img src="japan.png" alt="Nick in Japan" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>Internationally acclaimed musician Nick Consone has recently returned from a highly successful tour in Japan, expressing his profound gratitude for the opportunity to perform in such a beautiful country.</p>
+
+    <p>During his tour, Nick visited several cities across Japan, captivating audiences with his unique blend of music and heartfelt performances. The tour not only showcased his musical talents but also allowed him to immerse himself in the rich cultural tapestry of Japan.</p>
+
+    <p>Reflecting on his experiences, Nick shared, "Japan has been an incredible journey. The warmth and enthusiasm of the fans, the beauty of the landscapes, and the richness of the culture have left an indelible mark on my heart. I am deeply thankful for every moment spent in this wonderful country."</p>
+
+    <p>As a nod to his memorable time in Japan, Nick concluded with a heartfelt Japanese phrase, "<em>心から感謝しています</em>" (Kokoro kara kansha shiteimasu), which means "I am sincerely grateful from the bottom of my heart."</p>
+
+    </article>
+    
+</section>
+
+
+
+
+
+</section>
+
+
+    <section id="upcoming-shows" class="section">
+        <h2>Upcoming Shows</h2>
+        <ul>
+            
+
+<li>
+            <div class="show-item">
+                <span class="show-info">Jan 15, 2024 - The Sinclair, Cambridge</span>
+                <a href="URL_FOR_TICKETS" class="ticket-button">Purchase Tickets</a>
+            </div>
+        </li>
+
+<li>
+            <div class="show-item">
+                <span class="show-info">Feb 10, 2024 - Brighton Music Hall, Boston</span>
+                <a href="URL_FOR_TICKETS" class="ticket-button">Purchase Tickets</a>
+            </div>
+        </li>
+
+<li>
+            <div class="show-item">
+                <span class="show-info">Mar 05, 2024 - Royale, Boston</span>
+                <a href="URL_FOR_TICKETS" class="ticket-button">Purchase Tickets</a>
+            </div>
+        </li>
+
+<li>
+            <div class="show-item">
+                <span class="show-info">Apr 20, 2024 - Paradise Rock Club, Boston</span>
+                <a href="URL_FOR_TICKETS" class="ticket-button">Purchase Tickets</a>
+            </div>
+        </li>
+
+<li>
+            <div class="show-item">
+                <span class="show-info">May 18, 2024 - House of Blues, Boston</span>
+                <a href="URL_FOR_TICKETS" class="ticket-button">Purchase Tickets</a>
+            </div>
+        </li>
+
+        </ul>
+    </section>
+
+    <section id="music" class="section">
+        <h2>Music</h2>
+        <img src="echoes.png" alt="Album Cover" height="350" width="350">
+            <h3>Echoes</h3>
+            
+<section id="album-description" class="section">
+   
+    <p>In his latest album, "Echoes," Nick Consone embarks on a deeply personal and poignant journey, paying homage to the enduring legacy of his beloved mother, Sheila. Each track in this heartfelt collection resonates with the love, lessons, and memories she left behind, turning grief into a beautiful tapestry of sound and emotion.</p>
+
+    <p>The album opens with "Sheila's Dawn," a song that captures the essence of new beginnings and the everlasting impact of maternal love. It progresses through a journey of emotional highs and lows, mirroring the complex facets of grief and remembrance. In "Guiding Star," Nick reflects on the wisdom and guidance his mother imparted, while "Tears of the Willow" expresses the profound sense of loss and longing.</p>
+
+    <p>Yet, amidst the sorrow, there is a thread of hope and resilience. "Dance of the Memories" is an upbeat track that celebrates the joyous moments shared, and "Eternal Embrace" concludes the album with a message of enduring love and the comfort of cherished memories.</p>
+
+    <p>Throughout "Echoes," Nick's voice serves as a beacon of raw emotion, encapsulating the pain of loss and the beauty of remembering. The album is not only a journey through Nick's personal experiences but also an invitation to listeners to find solace and connection in their own stories of love and loss.</p>
+
+    <p>In this touching tribute, Nick Consone has created more than just music; he has crafted an everlasting echo of the love between a mother and her son. "Echoes" stands as a profound testament to the unbreakable bonds of family and the enduring power of love.</p>
+
+    <a href="#">Listen Now</a>
+</section>
+
+           
+
+
+<img src="eclipse.png" alt="Album Cover" height="350" width="350">
+            <h3>Eclipse</h3>
+            
+<section id="album-description" class="section">
+   
+    <p>In the groundbreaking new album "Eclipse," Nick Consone masterfully combines the soulful strums of the acoustic guitar with the pulsating rhythms of electric beats. This fusion creates a soundscape that is both innovative and deeply emotive, marking a bold departure from his previous works. "Eclipse" encapsulates a journey of musical exploration, where traditional melodies meet contemporary electronic music, crafting a unique genre all its own.</p>
+
+    <p>Each track in "Eclipse" is a testament to Nick's versatility as an artist. The album opens with the hauntingly beautiful "Shadow Dance," where the gentle plucking of guitar strings weaves seamlessly into a backdrop of synthesized rhythms, setting the tone for the entire album. It’s in tracks like "Lunar Echoes" and "Twilight Pulse" where Nick’s talent truly shines, as he skillfully balances the acoustic elements with electronic influences, creating a harmonious blend that resonates with the listener's soul.</p>
+
+    <p>The heart of "Eclipse" lies in its ability to convey deep emotions through this blend of sounds. Songs such as "Celestial" and "Horizon’s End" showcase not just musical proficiency, but a profound depth of expression. The album's climax, "Aurora," is a masterpiece of crescendos and decrescendos, with the guitar and electronic elements dancing together in a powerful finale. With "Eclipse," Nick Consone invites us on a transcendent musical journey, where every note and beat tells a story of discovery, innovation, and the unyielding power of music.</p>
+
+    <a href="#">Listen Now</a>
+</section>
+
+    </section>
+
+    <section id="newsletter" class="section">
+        <h2>Newsletter Sign Up</h2>
+        <p>Stay updated with the latest news and show dates. Sign up for our newsletter.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer id="social-media" class="section">
+        <a href="https://www.facebook.com/nickconsonemusic/"><i class="fab fa-facebook-f"></i> Facebook</a> | 
+        <a href="https://www.twitter.com/nickconsone"><i class="fab fa-twitter"></i> Twitter</a> | 
+        <a href="https://www.instagram.com/nickconsone/"><i class="fab fa-instagram"></i> Instagram</a> | 
+        <a href="https://www.youtube.com/user/nickconsone"><i class="fab fa-youtube"></i> YouTube</a> |
+        <a href="#"><i class="fab fa-tiktok"></i> TikTok</a> |
+        <a href="#"><i class="fab fa-spotify"></i> Spotify</a> |
+        <a href="#"><i class="fab fa-apple"></i> Apple Music</a>
+        <p style="text-align: center;">© Copyright Nick Consone – 2024. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
